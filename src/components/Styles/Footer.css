@@ -1,0 +1,44 @@
+#df {background-color: #F8F8F8;}
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem; 
+    padding-top: 7rem; 
+    margin-top: 3rem;
+  }
+  
+  #derecha {
+    text-align: left;
+    flex: 1; 
+  }
+  
+  #izquierda {
+    text-align: left;
+    flex: 1; 
+  }
+  
+
+  @media (max-width: 768px) {
+    #footer {
+      flex-direction: column; 
+      align-items: center;
+      margin-top: 1rem; 
+    }
+    #derecha {
+        order: 2; 
+        flex: auto; 
+        padding:3rem;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+    
+      #izquierda {
+        order: 1;
+        flex: auto; 
+        margin-bottom: 1rem;
+        text-align: center;
+      
+      }
+  }
+  

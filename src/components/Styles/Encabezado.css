@@ -1,0 +1,84 @@
+.horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%; 
+  }
+  
+  #logo {
+    margin-right: 2rem; 
+  }
+  
+
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem; 
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--color-secondary); 
+    font-size: 1rem; 
+  }
+  
+  #buttons {
+    display: flex;
+    align-items: center;
+    padding: 1rem; 
+  }
+  
+  button {
+    padding: 0.625rem 1.25rem; 
+    background-color: var(--color-white); 
+    color: var(--color-black); 
+    border-radius: 2rem; 
+    border: 1px solid var(--color-white); 
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .SingButton {
+    padding: 0.625rem 1.875rem; 
+    background-color: var(--color-white); 
+    color: var(--color-red); 
+    border-radius: 2rem; 
+    border: 2px solid var(--color-red); 
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .horizontal {
+      flex-direction: column;
+      padding: 1rem 5%; 
+    }
+  
+    #logo {
+      margin-right: 0;
+      margin-bottom: 1rem; 
+    }
+  
+    #nav {
+      margin-left: 0;
+      margin-bottom: 1rem; 
+    }
+  
+    nav {
+      flex-direction: column;
+      padding: 0.5rem; /
+    }
+  
+    nav a {
+      text-align: center;
+    }
+  
+    #buttons {
+      flex-direction: column;
+    }
+  
+    button,
+    .SingButton {
+      margin: 0.5rem 0;
+    }
+  }

@@ -1,0 +1,48 @@
+
+  #subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+ 
+  }
+  
+  #subscribe h2 {
+    margin-bottom: 2rem;
+   
+  }
+  
+  .centered {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .centered input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--gray);
+    color: var(--white);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .centered input[type="textArea"] {
+    resize: vertical;
+  }
+  
+  
+  @media (max-width: 768px) {
+    #subscribe {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  
+    #subscribe button {
+      width: 100%;
+    }
+  }

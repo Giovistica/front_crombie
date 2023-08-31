@@ -1,0 +1,23 @@
+
+.CenterText {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  #planes {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem; 
+  }
+  
+  @media (max-width: 768px) {
+    .CenterText {
+      padding: 1rem; 
+    }
+  
+    #planes {
+      gap: 1rem; 
+    }
+  }
+  
